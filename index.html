@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello World</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ffe8b0, #ffc2d1);
+      font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+      color: #4a3b52;
+      text-align: center;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+    .card {
+      background: #fffdf8;
+      padding: 48px 56px;
+      border-radius: 28px;
+      box-shadow: 0 12px 32px rgba(120, 60, 90, 0.18);
+    }
+    .smiley {
+      font-size: 96px;
+      line-height: 1;
+      display: inline-block;
+      animation: bob 2.4s ease-in-out infinite;
+    }
+    h1 {
+      margin: 16px 0 0;
+      font-size: 48px;
+      letter-spacing: 0.5px;
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0) rotate(-4deg); }
+      50% { transform: translateY(-10px) rotate(4deg); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .smiley { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="smiley" role="img" aria-label="Smiling face">😊</div>
+    <h1>Hello World</h1>
+  </div>
+</body>
+</html>
